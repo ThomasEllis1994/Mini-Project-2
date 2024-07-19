@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 4px 0.2em var(--box-shadow);
+    font-size: 1.2em;
+}
+.navLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.leftNav {
+    padding-inline: 20px;
+}
+
+.navLinks a {
+    color: var(--text-color);
+    padding-inline: 10px;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid black;
+}
+.login a {
+    margin: 10px;
+}
