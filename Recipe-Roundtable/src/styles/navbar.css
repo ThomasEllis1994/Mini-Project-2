@@ -1,3 +1,15 @@
+:root {
+    --background-color: white;
+    --background-light: white;
+    --background-dark: rgba(0, 0, 0, 0.652);
+    --primary-color: rgb(30, 255, 255);
+    --text-color-light: black;
+    --text-color-dark: white;
+    --font-size: 16px;
+    --animation-speed: 1;
+    --box-shadow: rgba(54, 53, 53, 0.314);
+}
+
 .navbar {
     display: flex;
     height: 120px;
@@ -5,6 +17,7 @@
     justify-content: center;
     box-shadow: 3px 4px 0.2em var(--box-shadow);
     font-size: 1.2em;
+    background-color: var(--background-light);
 }
 .navLinks {
     display: flex;
@@ -12,17 +25,39 @@
     align-items: center;
     width: 100%;
 }
+.siteLinks {
+    display: flex;
+    justify-content: space-evenly;
+}
 .leftNav {
     padding-inline: 20px;
 }
 
-.navLinks a {
-    color: var(--text-color);
+.navLink {
+    color: var(--text-color-light);
     padding-inline: 10px;
     font-weight: bolder;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+    position: relative;
+    height: fit-content;
 }
+.navLink::before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background-color: var(--primary-color);
+    bottom: -10px;
+    left: 0;
+    transform: scaleX(0);
+    transition: calc(var(--animation-speed) * 0.5s);
+}
+.navLink:hover::before {
+    transform: scaleX(1);
+}
+
 .login {
     display: flex;
     flex-direction: column;

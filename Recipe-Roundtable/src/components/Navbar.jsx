@@ -1,30 +1,44 @@
+import { NavLink } from "react-router-dom";
+
 export default function Navbar() {
     return (
         <div className="navbar">
             <div className="leftNav">
-                <a href="#!">
+                <NavLink href="#!">
                     <img
-                        src="../../src/photos/Site-Photos/logo.png"
+                        src="../../src/photos/Site-Photos/Electric-Blue-Logo.png"
                         alt="Recipe Roundtable Logo"
                         style={{
                             height: 100,
                             width: 100,
                         }}
                     />
-                </a>
+                </NavLink>
             </div>
             <div className="navLinks">
                 <div></div>
                 <div className="siteLinks">
-                    <a href="#!">Home</a>
-                    <a href="#!">Recipes</a>
-                    <a href="#!">Dinner Helper</a>
-                    <a href="#!">Submit a Recipe</a>
+                    <NavLink className="navLink" href="/">
+                        Home
+                    </NavLink>
+                    <NavLink className="navLink" href="/recipes">
+                        Recipes
+                    </NavLink>
+                    <NavLink className="navLink" href="#!">
+                        Dinner Helper
+                    </NavLink>
+                    <NavLink className="navLink" href="#!">
+                        Submit a Recipe
+                    </NavLink>
                 </div>
-                <div className="borderDiv"></div>
+                <div className="border"></div>
                 <div className="login">
-                    <a href="#!">Login</a>
-                    <a href="#!">Sign up for Newsletter</a>
+                    <NavLink className="navLink" href="#!">
+                        Login
+                    </NavLink>
+                    <NavLink className="navLink" href="#!">
+                        Sign up for Newsletter
+                    </NavLink>
                 </div>
             </div>
         </div>
