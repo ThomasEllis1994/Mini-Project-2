@@ -1,5 +1,3 @@
-import { NavLink } from "react-router-dom";
-
 import RecipeCard from "../components/RecipeCard";
 
 export const HomePage = () => {
@@ -72,26 +70,6 @@ export const HomePage = () => {
                     </div>
                 </div>
             </section>
-
-            <footer>
-                <div className="footer">
-                    <div>
-                        <NavLink className="footerNav community" href="">
-                            Sign In
-                        </NavLink>
-
-                        <NavLink className="footerNav community" href="">
-                            Sign up for our newsletter
-                        </NavLink>
-                        <NavLink
-                            className="footerNav community"
-                            href="dinnerHelper.html"
-                        >
-                            Can&apost Decide What to Eat?
-                        </NavLink>
-                    </div>
-                </div>
-            </footer>
         </>
     );
 };

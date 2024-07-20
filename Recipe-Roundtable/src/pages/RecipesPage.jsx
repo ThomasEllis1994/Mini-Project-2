@@ -1,47 +1,6 @@
 export default function RecipesPage() {
     return (
         <>
-            <div className="header navContainer">
-                <div>
-                    <img
-                        src="../Pictures/logo.png"
-                        height="150px"
-                        width="150px"
-                        alt="Logo"
-                        className="logo"
-                    />
-                </div>
-
-                <div id="navigation" className="container links">
-                    <a className="nav" href="index.html">
-                        Home
-                    </a>
-                    <a className="nav" href="recipes.html">
-                        Recipes
-                    </a>
-
-                    <a className="nav" href="dinnerHelper.html">
-                        Dinner Helper
-                    </a>
-                    <a className="nav" href="">
-                        Submit a Recipe
-                    </a>
-                </div>
-
-                <div>
-                    <div className="headerRight">
-                        <a className="nav community" href="">
-                            Sign In
-                        </a>
-                    </div>
-                    <div className="headerRight">
-                        <a className="nav community" href="">
-                            Sign up for our newsletter
-                        </a>
-                    </div>
-                </div>
-            </div>
-
             <div id="carouselExample" className="carousel slide">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
@@ -288,25 +247,6 @@ export default function RecipesPage() {
                     <span className="visually-hidden next">Next</span>
                 </button>
             </div>
-            <footer>
-                <div className="footer">
-                    <div>
-                        <a className="footerNav community" href="">
-                            Sign In
-                        </a>
-
-                        <a className="footerNav community" href="">
-                            Sign up for our newsletter
-                        </a>
-                        <a
-                            className="footerNav community"
-                            href="dinnerHelper.html"
-                        >
-                            Can`&apost Decide What to Eat?
-                        </a>
-                    </div>
-                </div>
-            </footer>
         </>
     );
 }
