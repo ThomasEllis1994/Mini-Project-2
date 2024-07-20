@@ -4,7 +4,7 @@ export default function Navbar() {
     return (
         <div className="navbar">
             <div className="leftNav">
-                <NavLink href="#!">
+                <NavLink href="/">
                     <img
                         src="../../src/photos/Site-Photos/Electric-Blue-Logo.png"
                         alt="Recipe Roundtable Logo"
@@ -18,10 +18,10 @@ export default function Navbar() {
             <div className="navLinks">
                 <div></div>
                 <div className="siteLinks">
-                    <NavLink className="navLink" href="/">
+                    <NavLink className="navLink" to="/">
                         Home
                     </NavLink>
-                    <NavLink className="navLink" href="/recipes">
+                    <NavLink className="navLink" to="/recipes">
                         Recipes
                     </NavLink>
                     <NavLink className="navLink" href="#!">
