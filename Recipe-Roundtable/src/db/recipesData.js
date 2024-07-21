@@ -1,9 +1,11 @@
-const recipesData = [
+const RecipesData = [
     {
         title: "Steak Fried Rice",
-        imageURL: "../Pictures/RecipePictures/steakFriedRice.jpg",
-        src: "../HTML/Recipes/steakFriedRice.html",
-        id: 1,
+        imageURL: "../../src/photos/Recipe-Photos/Chicken-Fried-Rice.jpg",
+        src: "/steakFriedRice",
+        blurb: "This is yummy",
+        recipeId: 1,
+        time: "1 hr",
         ingredients: [
             "1.5 Cup Leftover Rice",
             "1 Flank Steak",
@@ -24,9 +26,11 @@ const recipesData = [
     },
     {
         title: "Dino Chicken Nuggets",
-        imageURL: "../Pictures/RecipePictures/DinoNuggies.png",
+        imageURL: "../../src/photos/Recipe-Photos/DinoNuggies.png",
         src: "../HTML/Recipes/DinoNuggies.html",
-        id: 2,
+        recipeId: 2,
+        time: "1 hr",
+        blurb: "This is yummy",
         ingredients: ["8 nuggets"],
         instructions: [
             "Preheat oven to 350F. Then insert the dino nuggies into the oven. After 8 minutes, flip them. Cook for 8 more minutes, then remove from oven and serve.",
@@ -34,9 +38,11 @@ const recipesData = [
     },
     {
         title: "Breakfast Burritos",
-        imageURL: "../Pictures/RecipePictures/breakfastBurrito.jpg",
+        imageURL: "../../src/photos/Recipe-Photos/Breakfast-Burrito.jpg",
         src: "../HTML/Recipes/BreakfastBurrito.html",
-        id: 3,
+        blurb: "This is yummy",
+        recipeId: 3,
+        time: "1 hr",
         ingredients: [
             "4 Eggs",
             "4 Bacon Slics",
@@ -56,9 +62,11 @@ const recipesData = [
     },
     {
         title: "Mini Pizza Rolls",
-        imageURL: "../Pictures/RecipePictures/miniPizzaRolls.JPG",
+        imageURL: "../../src/photos/Recipe-Photos/miniPizzaRolls.JPG",
         src: "../HTML/Recipes/MiniPizzaRolls.html",
-        id: 4,
+        blurb: "This is yummy",
+        recipeId: 4,
+        time: "1 hr",
         ingredients: [
             "Pillsbury Crescent Roll Sheet",
             "36 Pizza Pepperonis",
@@ -77,9 +85,11 @@ const recipesData = [
     },
     {
         title: "Pepperoni Stuffed Chicken",
-        imageURL: "../Pictures/RecipePictures/PepperoniStuffedChicken.jpg",
+        imageURL: "../../src/photos/Recipe-Photos/PepperoniStuffedChicken.jpg",
         src: "../HTML/Recipes/PepperoniStuffedChicken.html",
-        id: 5,
+        blurb: "This is yummy",
+        time: "1 hr",
+        recipeId: 5,
         ingredients: [
             "4 chicken breasts",
             "Pepperoni",
@@ -100,4 +110,4 @@ const recipesData = [
         ],
     },
 ];
-export default recipesData;
+export default RecipesData;

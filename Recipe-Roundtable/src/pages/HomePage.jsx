@@ -1,6 +1,18 @@
-import RecipeCard from "../components/RecipeCard";
+// import RecipeCard from "../components/RecipeCard";
+// import recipesData from "../db/recipesData";
+// import { useEffect, useState } from "react";
+import { RecipeGrid } from "../components/RecipeGrid";
 
 export const HomePage = () => {
+    // const [isLoading, setIsLoading] = useState([true]);
+    // const [recipes, setRecipes] = useState([]);
+
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         setRecipes(recipesData);
+    //         setIsLoading(false);
+    //     }, 2000);
+    // }, []);
     return (
         <>
             <article className="gridContainer">
@@ -48,26 +60,14 @@ export const HomePage = () => {
                         </p>
                     </div>
                 </div>
-                <div className="col RoW">
-                    <RecipeCard />
-                </div>
+                <div className="col RoW">{/* <RecipeCard /> */}</div>
             </article>
 
             <section className="sliders" style={{ textAlign: "center" }}>
                 <h2 className="primaryColor">Recent Recipes</h2>
-                <div className="flexContainer">
-                    <div className="flexItem">
-                        <RecipeCard />
-                    </div>
-                    <div className="flexItem">
-                        <RecipeCard />
-                    </div>
-                    <div className="flexItem">
-                        <RecipeCard />
-                    </div>
-                    <div className="flexItem">
-                        <RecipeCard />
-                    </div>
+
+                <div id="recipe-list" className="row">
+                    <RecipeGrid />
                 </div>
             </section>
         </>

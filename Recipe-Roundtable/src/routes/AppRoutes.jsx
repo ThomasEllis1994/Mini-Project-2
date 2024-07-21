@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { HomePage } from "../pages/HomePage";
 import RecipesPage from "../pages/RecipesPage";
+import RecipePage from "../pages/RecipePage";
 
 const AppRoutes = (props) => {
     return (
@@ -8,6 +9,10 @@ const AppRoutes = (props) => {
             {/* index matches on default/home URL: / */}
             <Route path="/" element={<HomePage {...props} />} />
             <Route path="/recipes" element={<RecipesPage {...props} />} />
+            <Route
+                path="/recipes/:recipeId"
+                element={<RecipePage {...props} />}
+            />
 
             {/* <Route path="/about" element={<AboutPage {...props} />} />
 
