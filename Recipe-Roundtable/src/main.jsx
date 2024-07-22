@@ -10,6 +10,8 @@ import "./styles/footer.css";
 import "./styles/recipeGrid.css";
 import "./styles/singleRecipePage.css";
 import "./styles/about.css";
+import "./styles/recipesPage.css";
+import "./styles/pageNotFound.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>

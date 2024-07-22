@@ -3,7 +3,7 @@ import { HomePage } from "../pages/HomePage";
 import RecipesPage from "../pages/RecipesPage";
 import SingleRecipePage from "../pages/SingleRecipePage";
 import { AboutPage } from "../pages/AboutPage";
-
+import PageNotFound from "../pages/PageNotFound";
 const AppRoutes = (props) => {
     return (
         <Routes>
@@ -15,7 +15,7 @@ const AppRoutes = (props) => {
                 element={<SingleRecipePage {...props} />}
             />
             <Route path="/about" element={<AboutPage {...props} />} />
-
+            <Route path="*" element={<PageNotFound />} />
             {/* <Route path="/about" element={<AboutPage {...props} />} />
 
             <Route

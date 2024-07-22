@@ -25,10 +25,10 @@ export default function Navbar() {
                         <NavLink className="navLink" to="/recipes">
                             Recipes
                         </NavLink>
-                        <NavLink className="navLink" href="#!">
+                        <NavLink className="navLink" to="*">
                             Dinner Helper
                         </NavLink>
-                        <NavLink className="navLink" href="#!">
+                        <NavLink className="navLink" to="*">
                             Submit a Recipe
                         </NavLink>
                         <NavLink className={"navLink"} to="/about">
@@ -38,10 +38,10 @@ export default function Navbar() {
                     <div></div>
 
                     <div className="login navItem">
-                        <NavLink className="navLink" href="#!">
+                        <NavLink className="navLink" to="*">
                             Login
                         </NavLink>
-                        <NavLink className="navLink" href="#!">
+                        <NavLink className="navLink" to="*">
                             Sign up for Newsletter
                         </NavLink>
                     </div>
