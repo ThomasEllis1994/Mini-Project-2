@@ -5,18 +5,16 @@ export const Footer = () => {
         <>
             <footer>
                 <div className="footer">
-                    <div>
-                        <NavLink className="footerNav community" href="#!">
-                            Sign In
-                        </NavLink>
+                    <NavLink className="footerNav community" href="#!">
+                        Sign In
+                    </NavLink>
 
-                        <NavLink className="footerNav community" href="#!">
-                            Sign up for our newsletter
-                        </NavLink>
-                        <NavLink className="footerNav community" to="#!">
-                            Can&apost Decide What to Eat?
-                        </NavLink>
-                    </div>
+                    <NavLink className="footerNav community" href="#!">
+                        Sign up for our newsletter
+                    </NavLink>
+                    <NavLink className="footerNav community" to="#!">
+                        Can&apost Decide What to Eat?
+                    </NavLink>
                 </div>
             </footer>
         </>

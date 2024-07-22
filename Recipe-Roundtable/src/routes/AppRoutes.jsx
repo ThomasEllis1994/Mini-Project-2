@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { HomePage } from "../pages/HomePage";
 import RecipesPage from "../pages/RecipesPage";
-import RecipePage from "../pages/RecipePage";
+import SingleRecipePage from "../pages/SingleRecipePage";
 import { AboutPage } from "../pages/AboutPage";
 
 const AppRoutes = (props) => {
@@ -12,7 +12,7 @@ const AppRoutes = (props) => {
             <Route path="/recipes" element={<RecipesPage {...props} />} />
             <Route
                 path="/recipes/:recipeId"
-                element={<RecipePage {...props} />}
+                element={<SingleRecipePage {...props} />}
             />
             <Route path="/about" element={<AboutPage {...props} />} />
 

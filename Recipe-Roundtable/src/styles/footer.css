@@ -3,7 +3,7 @@
     --background-light: white;
     --background-dark: rgba(0, 0, 0, 0.652);
     --primary-color: rgb(30, 255, 255);
-    --text-color-light: black;
+    --text-color-light: rgb(65, 65, 65);
     --text-color-dark: white;
     --font-size: 16px;
     --animation-speed: 1;
@@ -23,4 +23,13 @@ footer {
     text-decoration: none;
     color: black;
     margin: 10px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 800px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

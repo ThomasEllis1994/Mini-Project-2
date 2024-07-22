@@ -4,7 +4,7 @@ export const RecipeCard = (props) => {
     return (
         <>
             <Link key={props.recipeId} to={`/recipes/${props.recipeId}`}>
-                <div key={props.recipeId} className="recipeCard">
+                <div className="recipeCard">
                     <div className="cover"></div>
                     <div className="recipeCardPic">
                         <img src={props.imageURL} alt={props.title} />

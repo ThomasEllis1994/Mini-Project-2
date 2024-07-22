@@ -1,3 +1,15 @@
+:root {
+    --background-color: white;
+    --background-light: white;
+    --background-dark: rgba(0, 0, 0, 0.652);
+    --primary-color: rgb(30, 255, 255);
+    --text-color-light: rgb(65, 65, 65);
+    --text-color-dark: white;
+    --font-size: 16px;
+    --animation-speed: 1;
+    --box-shadow: rgba(54, 53, 53, 0.314);
+}
+
 .recipePageLayout {
     /* display: flex;
     flex-direction: column;
@@ -5,14 +17,18 @@
     align-items: center;
     text-align: center; */
     margin: 20px;
+    display: grid;
+    grid-template-columns: 75% 25%;
 }
 .recipeTop {
     display: grid;
-    width: 70%;
+    text-align: center;
     grid-template-columns: auto auto;
+    margin-bottom: 10vh;
 }
 .rightRecipe {
     margin-left: 20px;
+    width: 100%;
 }
 
 .recipePageTitle {
@@ -30,5 +46,11 @@
 }
 .list,
 .instr {
+    margin: 15px;
+}
+.ingr {
+    margin: 5px;
+}
+.mgn-10 {
     margin: 10px;
 }

@@ -2,7 +2,7 @@ import recipesData from "../db/recipesData";
 import { useEffect, useState } from "react";
 import { RecipeCard } from "./RecipeCard";
 
-export function RecipeGrid() {
+export function RecipesByCategories() {
     const [isLoading, setIsLoading] = useState([true]);
     const [recipes, setRecipes] = useState([]);
     isLoading;
@@ -12,6 +12,7 @@ export function RecipeGrid() {
             setIsLoading(false);
         }, 0);
     }, []);
+    console.log(recipes[0].title);
 
     return (
         <div className="recipeContainer">
