@@ -5,6 +5,7 @@ function RecipePage() {
     const params = useParams();
 
     const [recipe, setRecipe] = useState([]);
+    console.log(params);
 
     useEffect(() => {
         setTimeout(() => {
@@ -14,13 +15,28 @@ function RecipePage() {
 
     return (
         <>
-            <div>
+            <div className="recipePageLayout">
+                <div>
+                    <img
+                        className="recipePageImage"
+                        src={recipe.imageURL}
+                        alt={recipe.title}
+                    />
+                </div>
+
                 <h1>{recipe.title}</h1>
-                <img
-                    className="recipeImage"
-                    src={recipe.imageURL}
-                    alt={recipe.title}
-                />
+                <div>
+                    {recipe.ingredients?.map((ingredient) => (
+                        <>
+                            <p>{ingredient}</p>
+                        </>
+                    ))}
+                </div>
+                {recipe.instructions?.map((instruction) => (
+                    <>
+                        <p>{instruction}</p>
+                    </>
+                ))}
             </div>
         </>
     );

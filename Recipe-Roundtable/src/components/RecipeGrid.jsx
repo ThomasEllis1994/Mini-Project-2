@@ -28,22 +28,20 @@ export function RecipeGrid() {
                                 <img src={recipe.imageURL} alt={recipe.title} />
                             </div>
 
-                            <div className="recipeInfo">
-                                <div className="recipeCardTitle infoItem">
-                                    <h2>{recipe.title}</h2>
-                                </div>
-                                <div className="recipeTime infoItem">
-                                    <p>
-                                        <AccessTimeIcon
-                                            style={{
-                                                color: "white",
-                                                fontSize: "1.2vw",
-                                                marginRight: "3px",
-                                            }}
-                                        />
-                                        {recipe.time}
-                                    </p>
-                                </div>
+                            <div className="recipeCardTitle infoItem">
+                                <h2 className="front">{recipe.title}</h2>
+                            </div>
+                            <div className="recipeTime infoItem">
+                                <p className="front">
+                                    <AccessTimeIcon
+                                        style={{
+                                            color: "white",
+                                            fontSize: "1.2vw",
+                                            marginRight: "3px",
+                                        }}
+                                    />
+                                    {recipe.time}
+                                </p>
                             </div>
                         </div>
                     </Link>

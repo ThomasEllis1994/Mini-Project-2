@@ -34,6 +34,7 @@ const RecipesData = [
         ingredients: ["8 nuggets"],
         instructions: [
             "Preheat oven to 350F. Then insert the dino nuggies into the oven. After 8 minutes, flip them. Cook for 8 more minutes, then remove from oven and serve.",
+            "Grab some sauces for dipping",
         ],
     },
     {

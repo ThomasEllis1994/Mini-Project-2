@@ -1,4 +1,15 @@
-.recipeImage {
+.recipePageLayout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.recipePageItem {
+    margin-top: 20px;
+}
+
+.recipePageImage {
     width: 400px;
     height: 400px;
 }
