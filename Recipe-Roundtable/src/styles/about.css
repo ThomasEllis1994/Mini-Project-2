@@ -1,15 +1,16 @@
-.recipePageLayout {
+#theStory {
+    padding: 25px;
     display: flex;
+    grid-area: story;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.recipePageItem {
-    margin-top: 20px;
+header {
+    text-align: center;
 }
 
-.recipePageImage {
-    width: 400px;
-    height: 400px;
+.story {
+    margin: 10px;
 }

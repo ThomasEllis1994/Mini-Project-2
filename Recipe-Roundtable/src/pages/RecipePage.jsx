@@ -10,33 +10,44 @@ function RecipePage() {
     useEffect(() => {
         setTimeout(() => {
             setRecipe(recipesData[params.recipeId - 1]);
-        }, 1000);
+        }, 0);
     }, []);
 
     return (
         <>
             <div className="recipePageLayout">
-                <div>
-                    <img
-                        className="recipePageImage"
-                        src={recipe.imageURL}
-                        alt={recipe.title}
-                    />
+                <div className="recipeTop">
+                    <div className="imageContainer leftRecipe">
+                        <img
+                            className="recipePageImage"
+                            src={recipe.imageURL}
+                            alt={recipe.title}
+                        />
+                    </div>
+                    <div className="rightRecipe">
+                        <div className="recipePageTitle">
+                            <h1>{recipe.title}</h1>
+                        </div>
+                        <div className="ingredients list">
+                            <h4>Ingredients</h4>
+                            {recipe.ingredients?.map((ingredient) => (
+                                <>
+                                    <p className="ingr item">{ingredient}</p>
+                                </>
+                            ))}
+                        </div>
+                    </div>
                 </div>
-
-                <h1>{recipe.title}</h1>
-                <div>
-                    {recipe.ingredients?.map((ingredient) => (
-                        <>
-                            <p>{ingredient}</p>
-                        </>
-                    ))}
+                <div className="instructions">
+                    <h4>Instructions</h4>
+                    <ol className=" list">
+                        {recipe.instructions?.map((instruction) => (
+                            <>
+                                <li className="instr item">{instruction}</li>
+                            </>
+                        ))}
+                    </ol>
                 </div>
-                {recipe.instructions?.map((instruction) => (
-                    <>
-                        <p>{instruction}</p>
-                    </>
-                ))}
             </div>
         </>
     );

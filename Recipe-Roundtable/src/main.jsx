@@ -8,7 +8,8 @@ import "./styles/home.css";
 import "./styles/recipeCard.css";
 import "./styles/footer.css";
 import "./styles/recipeGrid.css";
-import "./styles/recipePage.css";
+import "./styles/singleRecipePage.css";
+import "./styles/about.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>

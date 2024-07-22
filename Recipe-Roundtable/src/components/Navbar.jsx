@@ -30,6 +30,9 @@ export default function Navbar() {
                     <NavLink className="navLink" href="#!">
                         Submit a Recipe
                     </NavLink>
+                    <NavLink className={"navLink"} to="/about">
+                        About
+                    </NavLink>
                 </div>
                 <div className="border"></div>
                 <div className="login">

@@ -1,18 +1,32 @@
-export const RecipeCard = ({ recipe }) => {
+import { Link } from "react-router-dom";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+export const RecipeCard = (props) => {
     return (
         <>
-            <div className="recipeCardPic">
-                <img src={recipe.imageURL} alt={recipe.title} />
-            </div>
-            <div className="recipeCardTitle">
-                <h2>{recipe.title}</h2>
-            </div>
-            <div className="recipeInfo">
-                <div>{recipe.blurb}</div>
-            </div>
-            <div className="recipeTime">
-                <p>{recipe.time}</p>
-            </div>
+            <Link key={props.recipeId} to={`/recipes/${props.recipeId}`}>
+                <div key={props.recipeId} className="recipeCard">
+                    <div className="cover"></div>
+                    <div className="recipeCardPic">
+                        <img src={props.imageURL} alt={props.title} />
+                    </div>
+
+                    <div className="recipeCardTitle infoItem">
+                        <h2 className="front">{props.title}</h2>
+                    </div>
+                    <div className="recipeTime infoItem">
+                        <p className="front">
+                            <AccessTimeIcon
+                                style={{
+                                    color: "white",
+                                    fontSize: "1.2vw",
+                                    marginRight: "3px",
+                                }}
+                            />
+                            {props.time}
+                        </p>
+                    </div>
+                </div>
+            </Link>
         </>
     );
 };
